@@ -2,11 +2,22 @@ interface Alumno{
     nombre:string;
     edad:number;
     email:string;
-    calificacion:number
+    calificacion?:number
 }
 
-const aumno:Alumno={
+const alumno:Alumno={
     nombre:'mario',
     edad:23,
     email:'mariogmail.com',
 }
+
+console.table(alumno);
+
+let mascotas=['perro','gato','perico'];
+mascotas[1]='Nuevo gato';
+mascotas.push('leon');
+console.log(mascotas);
+let tem:(string|number)[]=[]
+tem.push(11);
+tem.push('hola');
+console.log(tem);
